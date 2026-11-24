@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#5f3a2e">
+
+  <title>La 6 | Fábrica de Muebles</title>
+  <meta name="description" content="Fabricamos, personalizamos y distribuimos muebles para hogares, negocios y proyectos empresariales en Magdalena.">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top main-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <img src="assets/logos/logo-la6.png" alt="Logo La 6" class="brand-logo">
+        <span class="brand-text">LA 6</span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#medida">A medida</a></li>
+          <li class="nav-item"><a class="nav-link" href="#empresas">Empresas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#puntos">Puntos de venta</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-brand" href="#contacto">Cotizar proyecto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row min-vh-100 align-items-center py-5 g-5">
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">FÁBRICA · SHOWROOM · DISTRIBUCIÓN</span>
+
+          <h1 class="hero-title">
+            Fabricamos muebles para
+            <span>hogares y negocios.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Desde Magdalena diseñamos, producimos y distribuimos mobiliario para clientes
+            particulares, empresas y nuestra red de puntos de venta.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="#catalogo" class="btn btn-brand btn-lg">Ver catálogo</a>
+            <a href="#empresas" class="btn btn-outline-brand btn-lg">Cotización empresarial</a>
+          </div>
+
+          <div class="hero-trust mt-5">
+            <div>
+              <strong>Fabricación propia</strong>
+              <span>Producción directa desde nuestra fábrica.</span>
+            </div>
+            <div>
+              <strong>Diseños personalizados</strong>
+              <span>Medidas, materiales y acabados a elección.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div class="hero-visual">
+            <div id="heroCarousel"
+                 class="carousel slide carousel-fade"
+                 data-bs-ride="carousel"
+                 data-bs-interval="15000"
+                 data-bs-pause="false">
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/hero-fabrica.jpg"
+                       class="d-block w-100 hero-slide-image"
+                       alt="Fábrica de muebles La 6">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/images/hero-fabrica-2.jpg"
+                       class="d-block w-100 hero-slide-image"
+                       alt="Proceso de fabricación de muebles">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/images/hero-fabrica-3.jpg"
+                       class="d-block w-100 hero-slide-image"
+                       alt="Muebles terminados de La 6">
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-a">
+              <i class="bi bi-hammer"></i>
+              <span>Fabricación propia</span>
+            </div>
+
+            <div class="floating-card floating-card-b">
+              <i class="bi bi-rulers"></i>
+              <span>Proyectos a medida</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDA -->
+  <section class="brand-strip">
+    <div class="container">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-lg-3">
+          <i class="bi bi-house-heart"></i>
+          <span>Hogar</span>
+        </div>
+        <div class="col-6 col-lg-3">
+          <i class="bi bi-building"></i>
+          <span>Empresas</span>
+        </div>
+        <div class="col-6 col-lg-3">
+          <i class="bi bi-pencil-ruler"></i>
+          <span>A medida</span>
+        </div>
+        <div class="col-6 col-lg-3">
+          <i class="bi bi-truck"></i>
+          <span>Distribución</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="section-space">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="image-stack">
+            <img src="assets/images/fabrica.jpg" class="main-img" alt="Proceso de fabricación">
+            <img src="assets/images/equipo.jpg" class="small-img" alt="Equipo de fabricación">
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">QUIÉNES SOMOS</span>
+          <h2 class="section-title">Somos fabricantes, no solo vendedores.</h2>
+          <p class="section-copy">
+            La 6 es nuestra fábrica y showroom principal. Diseñamos, fabricamos y comercializamos
+            mobiliario para hogares y empresas, combinando producción propia, atención personalizada
+            y una red comercial que acerca nuestros productos a diferentes puntos de Magdalena.
+          </p>
+
+          <div class="about-list mt-4">
+            <div><i class="bi bi-check2-circle"></i> Producción propia</div>
+            <div><i class="bi bi-check2-circle"></i> Muebles personalizados</div>
+            <div><i class="bi bi-check2-circle"></i> Atención para proyectos empresariales</div>
+            <div><i class="bi bi-check2-circle"></i> Red de puntos de venta</div>
+          </div>
+
+          <a href="#contacto" class="text-link mt-4 d-inline-flex">
+            Conocer más sobre la fábrica <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section id="catalogo" class="section-space section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">QUÉ FABRICAMOS</span>
+          <h2 class="section-title">Muebles para cada espacio.</h2>
+        </div>
+        <p class="section-copy">
+          Explora nuestras principales categorías. Todas pueden adaptarse a medidas,
+          colores, materiales y acabados según tu proyecto.
+        </p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-salas.jpg" alt="Salas">
+            <div class="category-overlay">
+              <span>01</span>
+              <h3>Salas</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-comedores.jpg" alt="Comedores">
+            <div class="category-overlay">
+              <span>02</span>
+              <h3>Comedores</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-camas.jpg" alt="Camas y cabeceros">
+            <div class="category-overlay">
+              <span>03</span>
+              <h3>Camas y cabeceros</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-closets.jpg" alt="Closets">
+            <div class="category-overlay">
+              <span>04</span>
+              <h3>Closets</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-colchones.jpg" alt="Colchones">
+            <div class="category-overlay">
+              <span>05</span>
+              <h3>Colchones</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="category-card">
+            <img src="assets/images/categoria-personalizados.jpg" alt="Muebles personalizados">
+            <div class="category-overlay">
+              <span>06</span>
+              <h3>Personalizados</h3>
+              <a href="#contacto">Cotizar <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A MEDIDA -->
+  <section id="medida" class="section-space">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 reveal">
+          <span class="eyebrow">FABRICACIÓN A MEDIDA</span>
+          <h2 class="section-title">¿Tienes una idea? La fabricamos.</h2>
+          <p class="section-copy">
+            Desarrollamos muebles personalizados según medidas, materiales, colores,
+            acabados y necesidades específicas del espacio.
+          </p>
+          <a href="#contacto" class="btn btn-brand mt-3">Solicitar diseño</a>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <div class="process-grid">
+            <div class="process-item proceso-idea">
+              <span>01</span>
+              <i class="bi bi-lightbulb"></i>
+              <strong>Idea</strong>
+            </div>
+            <div class="process-item proceso-diseno">
+              <span>02</span>
+              <i class="bi bi-pencil-square"></i>
+              <strong>Diseño</strong>
+            </div>
+            <div class="process-item proceso-materiales">
+              <span>03</span>
+              <i class="bi bi-palette2"></i>
+              <strong>Materiales</strong>
+            </div>
+            <div class="process-item proceso-fabricacion">
+              <span>04</span>
+              <i class="bi bi-tools"></i>
+              <strong>Fabricación</strong>
+            </div>
+            <div class="process-item proceso-acabados">
+              <span>05</span>
+              <i class="bi bi-stars"></i>
+              <strong>Acabados</strong>
+            </div>
+            <div class="process-item proceso-entrega">
+              <span>06</span>
+              <i class="bi bi-truck"></i>
+              <strong>Entrega</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRESAS -->
+  <section id="empresas" class="section-space business-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="business-photo">
+            <img src="assets/images/proyecto-empresarial.jpg" alt="Proyecto empresarial de mobiliario">
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow eyebrow-light">CLIENTES EMPRESARIALES</span>
+          <h2 class="section-title text-white">Fabricamos también para empresas.</h2>
+          <p class="business-copy">
+            Atendemos proyectos para hoteles, restaurantes, oficinas, constructoras,
+            inmobiliarias, comercios y otros negocios que necesiten producción por volumen
+            o mobiliario personalizado.
+          </p>
+
+          <div class="business-tags">
+            <span>Hoteles</span>
+            <span>Restaurantes</span>
+            <span>Oficinas</span>
+            <span>Constructoras</span>
+            <span>Inmobiliarias</span>
+            <span>Comercios</span>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="#contacto" class="btn btn-light btn-lg">Solicitar cotización</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg">Hablar con asesor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIFRAS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <strong>Fábrica</strong>
+            <span>Producción propia</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <strong>Showroom</strong>
+            <span>Atención directa</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <strong>Red comercial</strong>
+            <span>Puntos de venta</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <strong>A medida</strong>
+            <span>Diseños personalizados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUNTOS DE VENTA -->
+  <section id="puntos" class="section-space section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">NUESTRA RED</span>
+          <h2 class="section-title">Encuentra nuestros productos cerca de ti.</h2>
+        </div>
+        <p class="section-copy">
+          Conoce los puntos de venta y distribuidores que hacen parte de nuestra red comercial.
+        </p>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <!-- DUPLICA O EDITA ESTAS TARJETAS CON LOS DATOS REALES -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="store-card">
+            <div class="store-logo-wrap">
+              <img src="assets/logos/logo-la6.png" alt="La 6">
+            </div>
+            <div class="store-body">
+              <span class="store-tag">Fábrica y showroom principal</span>
+              <h3>La 6</h3>
+              <p><i class="bi bi-geo-alt"></i> Dirección principal</p>
+              <div class="store-actions">
+                <a href="#" class="btn btn-brand btn-sm"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a href="#" class="btn btn-outline-brand btn-sm"><i class="bi bi-geo"></i> Cómo llegar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="store-card">
+            <div class="store-logo-wrap">
+              <img src="assets/logos/punto-1.png" alt="Punto de venta">
+            </div>
+            <div class="store-body">
+              <span class="store-tag">Punto de venta</span>
+              <h3>Nombre del local</h3>
+              <p><i class="bi bi-geo-alt"></i> Dirección</p>
+              <div class="store-actions">
+                <a href="#" class="btn btn-brand btn-sm"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a href="#" class="btn btn-outline-brand btn-sm"><i class="bi bi-geo"></i> Cómo llegar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="store-card">
+            <div class="store-logo-wrap">
+              <img src="assets/logos/punto-2.png" alt="Punto de venta">
+            </div>
+            <div class="store-body">
+              <span class="store-tag">Distribuidor</span>
+              <h3>Nombre del local</h3>
+              <p><i class="bi bi-geo-alt"></i> Dirección</p>
+              <div class="store-actions">
+                <a href="#" class="btn btn-brand btn-sm"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a href="#" class="btn btn-outline-brand btn-sm"><i class="bi bi-geo"></i> Cómo llegar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section-space">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">PROYECTOS REALIZADOS</span>
+          <h2 class="section-title">Nuestro trabajo habla por nosotros.</h2>
+        </div>
+        <p class="section-copy">
+          Reemplaza estas imágenes por fotografías reales de muebles terminados,
+          instalaciones y proyectos empresariales.
+        </p>
+      </div>
+
+      <div class="project-grid mt-4">
+        <img src="assets/images/proyecto-1.jpg" alt="Proyecto 1" class="reveal">
+        <img src="assets/images/proyecto-2.jpg" alt="Proyecto 2" class="reveal">
+        <img src="assets/images/proyecto-3.jpg" alt="Proyecto 3" class="reveal">
+        <img src="assets/images/proyecto-4.jpg" alt="Proyecto 4" class="reveal">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section-space contact-section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <span class="eyebrow">CONTACTO</span>
+          <h2 class="section-title">Cuéntanos qué necesitas.</h2>
+          <p class="section-copy">
+            Solicita una cotización para tu hogar, negocio o proyecto empresarial.
+          </p>
+
+          <div class="contact-info mt-4">
+            <a href="#"><i class="bi bi-whatsapp"></i> WhatsApp comercial</a>
+            <a href="mailto:correo@empresa.com"><i class="bi bi-envelope"></i> correo@empresa.com</a>
+            <span><i class="bi bi-geo-alt"></i> Magdalena, Colombia</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <form class="contact-form" id="quoteForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Tipo de cliente</label>
+                <select class="form-select" id="tipoCliente">
+                  <option>Hogar</option>
+                  <option>Empresa</option>
+                  <option>Hotel / Restaurante</option>
+                  <option>Constructor / Inmobiliaria</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad">
+              </div>
+              <div class="col-12">
+                <label class="form-label">¿Qué necesitas?</label>
+                <textarea class="form-control" rows="5" id="mensaje" placeholder="Cuéntanos sobre el mueble o proyecto..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-brand btn-lg">Enviar por WhatsApp</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand">LA 6</div>
+          <p>
+            Fabricación, personalización y distribución de muebles
+            para hogares y empresas en Magdalena.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Empresa</h5>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#empresas">Empresas</a>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Red</h5>
+          <a href="#puntos">Puntos de venta</a>
+          <a href="#medida">A medida</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Redes y contacto</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <hr>
+      <p class="small mb-0">© <span id="year"></span> La 6. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
